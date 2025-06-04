@@ -18,6 +18,12 @@ export default defineConfig(({ mode }) => {
       port: 3000,
       strictPort: true,
     },
+    preview: {
+      port: 3000,
+      strictPort: true,
+      host: true,
+      allowedHosts: ['infovac-frontend.onrender.com', 'localhost']
+    },
     optimizeDeps: {
       include: ['react', 'react-dom', 'react-router-dom', 'lucide-react']
     }
